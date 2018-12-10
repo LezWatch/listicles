@@ -1,4 +1,4 @@
-# Listicles by LezWatchTV
+# Listicles by LezWatch.TV
 
 Gutenberg Block for generating listicles.
 
