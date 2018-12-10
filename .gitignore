@@ -1,0 +1,7 @@
+/vendor
+.DS_Store
+/plugins/**/.git
+*node_modules/
+/npm-debug.log
+composer.lock
+package-lock.json
