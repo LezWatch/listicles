@@ -6,7 +6,12 @@ Gutenberg Block for generating listicles.
 
 The basic concept of Listicles is to generate lists of content in a correct HTML way using `<dl>` instead of `<ol>`. By taking advantage of CSS counters, we're able to automagically increment the content by adding more and more items to the list.
 
+* [WordPress.org Listing](https://wordpress.org/plugins/listicles)
+
+
 ## Development
+
+This project was bootstrapped with [Create Guten Block](https://github.com/ahmadawais/create-guten-block).
 
 ### Prerequisites
 
@@ -16,6 +21,8 @@ To use this project you will need Node.js and npm installed. If you don't alread
 
 1. `git clone https://github.com/Ipstenu/listicles-gutenberg.git plugin-name`
 2. `npm install`
+
+This will install everything you need to build
 
 ### Extending
 
@@ -34,7 +41,7 @@ Once you've made your changes you'll rebuild the plugin using the [CREATE_GUTEN_
 
 ## Deployment
 
-If you just want to use this as a plugin, you can install it as-is and have a blast. You can do the same with your fork.
+This plugin exists on WordPress org so you can install it by searching for Listicles.
 
 ### Example Images
 
