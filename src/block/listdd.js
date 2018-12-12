@@ -11,7 +11,7 @@ registerBlockType( 'lez-library/listdd', {
 	title: __( 'List Item Content', 'listicles' ),
 	parent: [ 'lez-library/listitem' ],
 	icon: 'migrate',
-	category: 'lezwatch',
+	category: 'layout',
 	description: __( 'A list item description (aka content).', 'listicles' ),
 
 	edit: function( props ) {

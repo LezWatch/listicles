@@ -8,12 +8,12 @@ const { Fragment } = wp.element;
 
 registerBlockType( 'lez-library/listitem', {
 
-	title: 'List Item',
+	title: __( 'List Item', 'listicles' ),
 	parent: [ 'lez-library/listicles' ],
 	icon: 'editor-rtl',
-	category: 'lezwatch',
+	category: 'layout',
 
-	description: 'An individual list item.',
+	description: __( 'An individual list item.', 'listicles' ),
 
 	edit: function( props ) {
 		const { className, clientId } = props;

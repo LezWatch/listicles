@@ -1,1 +1,1 @@
-hr.wp-block-separator{counter-reset:listicle-counter}
+hr.wp-block-separator{counter-reset:listicle-counter}.wp-block-lez-library-listicles{margin:4px;counter-reset:listicle-counter}.wp-block-lez-library-listicles dt:before{content:counter(listicle-counter);counter-increment:listicle-counter;margin-right:6px}.wp-block-lez-library-listicles.reversed dt:before{counter-increment:listicle-counter -1}

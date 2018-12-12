@@ -13,7 +13,7 @@ registerBlockType( 'lez-library/listdt', {
 	title: __( 'Listicle Item Title', 'listicles' ),
 	parent: [ 'lez-library/listitem' ],
 	icon: 'migrate',
-	category: 'lezwatch',
+	category: 'layout',
 	attributes: {
 		content: {
 			type: 'array',

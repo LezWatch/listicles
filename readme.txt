@@ -3,7 +3,7 @@ Contributors: Ipstenu, liljimmi
 Tags: listicles, blocks
 Requires at least: 5.0
 Tested up to: 5.0
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 Requires PHP: 7.0
 License: GPLv2 (or Later)
 
@@ -20,3 +20,47 @@ With this plugin you can insert images, videos, and more inside each list item. 
 = How many list items can I make? =
 
 Unlimited, though personally I would recommend 20 or less. Unless you're BuzzFeed.
+
+= How can I format the listicle title? =
+
+You can use bold, italics, strikethrough, and links.
+
+= What content can I put in the listicle content? =
+
+Anything except another listicle. This prevents listception.
+
+= How do I add an item? =
+
+Press the "Add Item" button at the bottom of your listicle.
+
+= How do I reverse the order? =
+
+Press the "Toggle Order" button at the bottom of the listicle, or when your whole listicle block is selected, turn on the 'Reversed' setting.
+
+= Can I move items within the listicle? =
+
+Yes! The same way you move any blocks.
+
+= The style is pretty bare, can I edit it? =
+
+You can edit it via custom CSS on your site.
+
+== Changelog ==
+
+= 1.0.1 =
+
+* 11 December 2018
+* Adding CSS front styling
+* Correcting category
+
+= 1.0.0 =
+
+* 10 December 2018
+* Initial release
+
+== Screenshots ==
+
+1. Adding Listicles
+2. Inserted Listicles
+3. Listicle with data
+4. Listicle reversed

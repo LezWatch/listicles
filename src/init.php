@@ -24,7 +24,7 @@ function listicles_cgb_block_assets() {
 	wp_enqueue_style(
 		'listicles',
 		plugins_url( 'dist/blocks.style.build.css', dirname( __FILE__ ) ),
-		array( 'wp-blocks' ),
+		array(),
 		filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.style.build.css' )
 	);
 }

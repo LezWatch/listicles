@@ -7,3 +7,16 @@
 hr.wp-block-separator {
   counter-reset: listicle-counter;
 }
+
+.wp-block-lez-library-listicles {
+    margin: 4px;
+    counter-reset: listicle-counter;
+    & dt:before {
+      content: counter(listicle-counter);
+      counter-increment: listicle-counter;
+      margin-right: 6px;
+    }
+    &.reversed  dt:before {
+      counter-increment: listicle-counter -1;
+    }
+}
