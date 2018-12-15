@@ -6,8 +6,9 @@ Gutenberg Block for generating listicles.
 
 The basic concept of Listicles is to generate lists of content in a correct HTML way using `<dl>` instead of `<ol>`. By taking advantage of CSS counters, we're able to automagically increment the content by adding more and more items to the list.
 
-* [WordPress.org Listing](https://wordpress.org/plugins/listicles)
+It was originally created for use on [LezWatch.TV](https://lezwatchtv.com).
 
+* [WordPress.org Listing](https://wordpress.org/plugins/listicles)
 
 ## Development
 
@@ -52,10 +53,6 @@ This plugin exists on WordPress org so you can install it by searching for Listi
 ![A Listicle with Content](assets/screenshot-03.jpg?raw=true "A Listicle with Content")
 
 ![A Listicle Reversed](assets/screenshot-04.jpg?raw=true "A Listicle Reversed")
-
-## Built With
-
-* [Create Guten Block](https://github.com/ahmadawais/create-guten-block) - The framework used
 
 ## License
 

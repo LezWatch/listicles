@@ -11,9 +11,11 @@ Create beautiful listicle blocks.
 
 == Description ==
 
-The listicles plugin creates interactive blocks for generating lists in articles. Unlike traditional lists (like `ul` and `li`) a listicle is intended to provide each section with a header, and multiple paragraphs per section.
+Be the next BuzzFeed! The listicles plugin creates interactive blocks for generating lists in articles. Unlike traditional lists (like `ul` and `li`) a listicle is intended to provide each section with a header, and multiple paragraphs per section.
 
 With this plugin you can insert images, videos, and more inside each list item. The limit is your imagination.
+
+This plugin was originally created for use on [LezWatch.TV](https://lezwatchtv.com).
 
 == Frequently Asked Questions ==
 
