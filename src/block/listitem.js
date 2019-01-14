@@ -4,6 +4,7 @@
 const { __ } = wp.i18n;
 const { InnerBlocks } = wp.editor;
 const { registerBlockType } = wp.blocks;
+const { IconButton } = wp.components;
 const { Fragment } = wp.element;
 
 registerBlockType( 'lez-library/listitem', {
@@ -23,8 +24,7 @@ registerBlockType( 'lez-library/listitem', {
 		 */
 		const onRemoveItem = () => {
 			setAttributes( { items: parseInt(`${ items }`)-1 } )
-			const block = createBlock( 'lez-library/listitem' )
-			dispatch( 'core/editor' ).removeBlock( block, items, clientId )
+			removeBlock( clientId )
 		}
 
 		return (

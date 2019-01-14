@@ -89,7 +89,6 @@ registerBlockType( 'lez-library/listicles', {
 							[ 'lez-library/listitem' ]
 						] }
 						defaultBlock={ 'lez-library/listitem' }
-						templateLock='insert'
 					/>
 					<div className='listicles-buttons'>
 						<IconButton
@@ -97,7 +96,6 @@ registerBlockType( 'lez-library/listicles', {
 							onClick={ onAddItem }
 							className='editor-inserter__toggle'
 						>Add Item</IconButton>
-
 						<IconButton
 							icon='controls-repeat'
 							onClick={ () => setAttributes( { reversed: ! reversed } ) }
