@@ -1,0 +1,26 @@
+{
+	"name": "lez-library/listicles",
+	"title": "Listicles",
+	"category": "layout",
+	"icon": "excerpt-view",
+	"description": "A block to generate Listicles.",
+	"keywords": [ "list", "listicle" ],
+	"attributes": {
+		"items": {
+			"type": "number",
+			"default": 2
+		},
+		"items": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"edit": "dist/blocks.build.js",
+	"save": "dist/blocks.build.js"
+	{
+		"stylesheets": {
+			"main": "dist/blocks.style.build.css",
+			"editor": "dist/blocks.editor.build.css"
+		}
+	}
+}
