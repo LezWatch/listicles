@@ -4,7 +4,7 @@
 	"category": "layout",
 	"icon": "excerpt-view",
 	"description": "A block to generate Listicles.",
-	"keywords": [ "list", "listicle" ],
+	"keywords": [ "list", "listicle", "listicles" ],
 	"attributes": {
 		"items": {
 			"type": "number",
