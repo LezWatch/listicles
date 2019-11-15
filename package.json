@@ -9,7 +9,7 @@
   "dependencies": {
     "cgb-scripts": "1.22.0",
     "classnames": "2.2.5",
-    "lodash": "4.17.10",
+    "lodash": "4.17.13",
     "lodash.times": "4.3.2",
     "memize": "1.0.5"
   },
