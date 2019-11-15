@@ -26,6 +26,12 @@ hr.wp-block-separator {
     margin: 8px;
 }
 
+.wp-block-lez-library-listicles .listicles-buttons {
+    clear: both;
+    content: '';
+    display: table;
+}
+
 .wp-block-lez-library-listicles .block-editor-block-list__insertion-point-inserter {
     display: none;
 }

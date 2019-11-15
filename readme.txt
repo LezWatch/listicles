@@ -3,7 +3,7 @@ Contributors: Ipstenu, liljimmi
 Tags: listicles, blocks
 Requires at least: 5.0
 Tested up to: 5.3
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 Requires PHP: 7.0
 License: GPLv2 (or Later)
 
@@ -49,20 +49,25 @@ You can edit it via custom CSS on your site.
 
 == Changelog ==
 
+= 1.0.4 =
+
+* CSS fix.
+
 = 1.0.3 =
 
-* 15 November 2018
 * WP 5.3 compatibility.
+
+= 1.0.2 =
+
+* WP 5.2 compatibility
 
 = 1.0.1 =
 
-* 11 December 2018
 * Adding CSS front styling
 * Correcting category
 
 = 1.0.0 =
 
-* 10 December 2018
 * Initial release
 
 == Screenshots ==
