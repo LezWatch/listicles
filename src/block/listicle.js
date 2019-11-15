@@ -95,12 +95,12 @@ registerBlockType( 'lez-library/listicles', {
 							icon='insert'
 							onClick={ onAddItem }
 							className='editor-inserter__toggle'
-						>Add Item</IconButton>
+						>Add List Item</IconButton>
 						<IconButton
 							icon='controls-repeat'
 							onClick={ () => setAttributes( { reversed: ! reversed } ) }
 							className='editor-inserter__toggle'
-						>Toggle Order</IconButton>
+						>Toggle List Order</IconButton>
 					</div>
 				</dl>
 			</Fragment>

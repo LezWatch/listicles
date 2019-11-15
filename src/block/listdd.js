@@ -6,6 +6,8 @@ const { InnerBlocks } = wp.editor;
 const { registerBlockType } = wp.blocks;
 const { Fragment } = wp.element;
 
+const ALLOWED_BLOCKS = [];
+
 registerBlockType( 'lez-library/listdd', {
 
 	title: __( 'List Item Content', 'listicles' ),
@@ -20,9 +22,13 @@ registerBlockType( 'lez-library/listdd', {
 		return (
 			<Fragment>
 				<dd className={ className }>
-					<InnerBlocks
-						templateLock={ false }
-					/>
+				<InnerBlocks
+					template={[
+						[ 'core/paragraph', { placeholder: 'List Content...' } ],
+					]}
+					//allowedBlocks={ ALLOWED_BLOCKS }
+					templateLock={ false } // This doesn't work as described.
+				/>
 				</dd>
 			</Fragment>
 		);

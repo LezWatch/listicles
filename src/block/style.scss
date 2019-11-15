@@ -20,3 +20,12 @@ hr.wp-block-separator {
       counter-increment: listicle-counter -1;
     }
 }
+
+.wp-block-lez-library-listicles .listicles-buttons button {
+    float: left;
+    margin: 8px;
+}
+
+.wp-block-lez-library-listicles .block-editor-block-list__insertion-point-inserter {
+    display: none;
+}
