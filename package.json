@@ -1,15 +1,15 @@
 {
   "name": "listicles",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "private": true,
   "scripts": {
     "start": "cgb-scripts start",
     "build": "cgb-scripts build"
   },
   "dependencies": {
-    "cgb-scripts": "1.22.0",
+    "cgb-scripts": "1.23.0",
     "classnames": "2.2.5",
-    "lodash": "4.17.10",
+    "lodash": "^4.17.15",
     "lodash.times": "4.3.2",
     "memize": "1.0.5"
   },
