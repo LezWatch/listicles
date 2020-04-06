@@ -1,22 +1,22 @@
 {
   "name": "listicles",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "private": true,
   "scripts": {
     "start": "cgb-scripts start",
     "build": "cgb-scripts build"
   },
   "dependencies": {
-    "cgb-scripts": "1.23.0",
-    "classnames": "2.2.5",
+    "cgb-scripts": "^1.23.0",
+    "classnames": "^2.2.5",
     "lodash": "^4.17.15",
-    "lodash.times": "4.3.2",
-    "memize": "1.0.5"
+    "lodash.times": "^4.3.2",
+    "memize": "^1.0.5"
   },
   "devDependencies": {
-    "@babel/cli": "7.0.0-beta.52",
-    "@babel/core": "7.0.0-beta.52",
-    "@babel/preset-env": "^7.7.1",
-    "babel-plugin-lodash": "3.3.4"
+    "@babel/cli": "^7.0.0-beta.52",
+    "@babel/core": "^7.0.0-beta.52",
+    "@babel/preset-env": "^7.9.0",
+    "babel-plugin-lodash": "^3.3.4"
   }
 }

@@ -35,14 +35,14 @@ The source code is located in `/src/` - that's where most (if not all) of your w
 * `/block/listdt.js` - The list title
 * `/block/listdd.js` - The list content (this allows you to add as many sub blocks as you can)
 
-Once you've made your changes you'll rebuild the plugin using the [CREATE_GUTEN_BLOCK.md](Create Guten Block) commands. Ex:
+Once you've made your changes you'll rebuild the plugin using the following commands:
 
-* `npm start` - Use to compile and run the block in development mode.
-* `npm run build` - Use to build production code for your block inside `dist` folder.
+* `npm start` - Compile and run the block in development mode -- this runs continually as you save changes.
+* `npm run build` - Build production code inside the `dist` folder.
 
 ## Deployment
 
-This plugin exists on WordPress org so you can install it by searching for Listicles.
+This plugin exists on WordPress.org so you can install it by searching for Listicles.
 
 ### Example Images
 
