@@ -8,19 +8,11 @@
 	"attributes": {
 		"items": {
 			"type": "number",
-			"default": 2
+			"default": 2,
 		},
-		"items": {
+		"reversed": {
 			"type": "boolean",
-			"default": false
-		}
-	},
-	"edit": "dist/blocks.build.js",
-	"save": "dist/blocks.build.js"
-	{
-		"stylesheets": {
-			"main": "dist/blocks.style.build.css",
-			"editor": "dist/blocks.editor.build.css"
+			"default": false,
 		}
 	}
 }
