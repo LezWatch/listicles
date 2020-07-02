@@ -4,8 +4,8 @@
  * WordPress dependencies
  */
 const { __ } = wp.i18n;
-const { InnerBlocks, RichText } = wp.editor;
 const { registerBlockType } = wp.blocks;
+const { InnerBlocks, RichText } = wp.editor;
 const { Fragment } = wp.element;
 
 registerBlockType( 'lez-library/listdt', {
@@ -37,7 +37,7 @@ registerBlockType( 'lez-library/listdt', {
 					tagName='dt'
 					className={ className }
 					value={ content }
-					formattingControls={ [ 'italic', 'strikethrough', 'bold', 'link' ] }
+					//allowedFormats={ [ 'core/bold', 'core/link', 'core/italic', 'core/strikethrough', 'core/text-color' ] }
 					onChange={ ( content ) => setAttributes( { content } ) }
 				/>
 			</Fragment>

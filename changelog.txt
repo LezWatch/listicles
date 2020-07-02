@@ -1,0 +1,21 @@
+= 1.0.6 =
+* WP 5.4 compatibility
+
+= 1.0.5 =
+* WP 5.4 compatibility
+
+= 1.0.4 =
+* CSS fix.
+
+= 1.0.3 =
+* WP 5.3 compatibility.
+
+= 1.0.2 =
+* WP 5.2 compatibility
+
+= 1.0.1 =
+* Adding CSS front styling
+* Correcting category
+
+= 1.0.0 =
+* Initial release

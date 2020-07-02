@@ -14,5 +14,8 @@
 			"type": "boolean",
 			"default": false,
 		}
-	}
+	},
+	"script": "file:./dist/blocks.build.js",
+	"editorStyle": "file:./dist/blocks.editor.build.css",
+	"style": "file:./dist/blocks.style.build.css"
 }

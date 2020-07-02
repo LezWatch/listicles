@@ -3,7 +3,7 @@ Contributors: Ipstenu, liljimmi
 Tags: listicles, blocks
 Requires at least: 5.0
 Tested up to: 5.4
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 Requires PHP: 7.0
 License: GPLv2 (or Later)
 
@@ -49,26 +49,9 @@ You can edit it via custom CSS on your site.
 
 == Changelog ==
 
-= 1.0.4 =
-
-* CSS fix.
-
-= 1.0.3 =
-
-* WP 5.3 compatibility.
-
-= 1.0.2 =
-
-* WP 5.2 compatibility
-
-= 1.0.1 =
-
-* Adding CSS front styling
-* Correcting category
-
-= 1.0.0 =
-
-* Initial release
+= 1.0.7 =
+* Deprecation compatibility fix.
+* Currently allowing ALL formats for RichText (in the title field) until [https://github.com/WordPress/gutenberg/issues/23660](#23660) is fixed.
 
 == Screenshots ==
 
