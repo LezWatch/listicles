@@ -8,11 +8,11 @@
 	"attributes": {
 		"items": {
 			"type": "number",
-			"default": 2,
+			"default": 2
 		},
 		"reversed": {
 			"type": "boolean",
-			"default": false,
+			"default": false
 		}
 	},
 	"script": "file:./dist/blocks.build.js",
