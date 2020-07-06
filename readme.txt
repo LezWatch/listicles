@@ -3,7 +3,7 @@ Contributors: Ipstenu, liljimmi
 Tags: listicles, blocks
 Requires at least: 5.0
 Tested up to: 5.4
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 Requires PHP: 7.0
 License: GPLv2 (or Later)
 
@@ -48,6 +48,9 @@ Yes! The same way you move any blocks.
 You can edit it via custom CSS on your site.
 
 == Changelog ==
+
+= 1.0.8 =
+* Previous bug actually due to [https://github.com/Yoast/wordpress-seo/pull/15617](Yoast SEO) so adjusting for that.
 
 = 1.0.7 =
 * Deprecation compatibility fix.
