@@ -37,7 +37,7 @@ registerBlockType( 'lez-library/listdt', {
 					tagName='dt'
 					className={ className }
 					value={ content }
-					//allowedFormats={ [ 'core/bold', 'core/link', 'core/italic', 'core/strikethrough', 'core/text-color' ] }
+					allowedFormats={ [ 'core/bold', 'core/link', 'core/italic', 'core/strikethrough', 'core/text-color', 'yoast-seo/link' ] }
 					onChange={ ( content ) => setAttributes( { content } ) }
 				/>
 			</Fragment>
