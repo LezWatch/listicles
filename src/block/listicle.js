@@ -1,3 +1,5 @@
+import { registerBlockType } from '@wordpress/blocks';
+
 /**
  * External dependencies
  */
@@ -10,9 +12,8 @@ import times from 'lodash/times';
  */
 const { __ } = wp.i18n;
 const { Fragment } = wp.element;
-const { createBlock, registerBlockType } = wp.blocks;
-const { InnerBlocks, InspectorControls } = wp.editor;
-const { PanelBody, ToggleControl, RangeControl, IconButton } = wp.components;
+const { createBlock, InnerBlocks, InspectorControls } = wp.blockEditor;
+const { PanelBody, ToggleControl, RangeControl, Button } = wp.components;
 const { dispatch } = wp.data;
 
 /**
@@ -64,7 +65,7 @@ registerBlockType( 'lez-library/listicles', {
 		const onAddItem = () => {
 			setAttributes( { items: parseInt(`${ items }`)+1 } )
 			const block = createBlock( 'lez-library/listitem' )
-			dispatch( 'core/editor' ).insertBlock( block, items, clientId )
+			dispatch( 'core/block-editor' ).insertBlock( block, items, clientId )
 		}
 
 		return (
@@ -91,16 +92,16 @@ registerBlockType( 'lez-library/listicles', {
 						defaultBlock={ 'lez-library/listitem' }
 					/>
 					<div className='listicles-buttons'>
-						<IconButton
+						<Button
 							icon='insert'
 							onClick={ onAddItem }
 							className='editor-inserter__toggle'
-						>Add List Item</IconButton>
-						<IconButton
+						>Add List Item</Button>
+						<Button
 							icon='controls-repeat'
 							onClick={ () => setAttributes( { reversed: ! reversed } ) }
 							className='editor-inserter__toggle'
-						>Toggle List Order</IconButton>
+						>Toggle List Order</Button>
 					</div>
 				</dl>
 			</Fragment>

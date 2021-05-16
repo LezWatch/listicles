@@ -1,11 +1,10 @@
-
+import { registerBlockType } from '@wordpress/blocks';
 
 /**
  * WordPress dependencies
  */
 const { __ } = wp.i18n;
-const { registerBlockType } = wp.blocks;
-const { InnerBlocks, RichText } = wp.editor;
+const { InnerBlocks, RichText } = wp.blockEditor;
 const { Fragment } = wp.element;
 
 registerBlockType( 'lez-library/listdt', {

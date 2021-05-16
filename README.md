@@ -12,7 +12,9 @@ It was originally created for use on [LezWatch.TV](https://lezwatchtv.com).
 
 ## Development
 
-This project was bootstrapped with [Create Guten Block](https://github.com/ahmadawais/create-guten-block).
+This project is managed by [the official WordPress create-block tool](https://developer.wordpress.org/block-editor/handbook/tutorials/create-block/wp-plugin/)
+
+Originally it used [Create Guten Block](https://github.com/ahmadawais/create-guten-block) but was ported over.
 
 ### Prerequisites
 
@@ -29,7 +31,7 @@ This will install everything you need to build
 
 The source code is located in `/src/` - that's where most (if not all) of your work will happen.
 
-* `blocks.js` - A list of all the separate JS files included
+* `index.js` - A list of all the separate JS files included
 * `/block/listicle.js` - The main listicle file
 * `/block/listitem.js` - Individual list items (this is only usable inside the Listicles block)
 * `/block/listdt.js` - The list title
@@ -37,8 +39,12 @@ The source code is located in `/src/` - that's where most (if not all) of your w
 
 Once you've made your changes you'll rebuild the plugin using the following commands:
 
-* `npm start` - Compile and run the block in development mode -- this runs continually as you save changes.
-* `npm run build` - Build production code inside the `dist` folder.
+* `$ npm start` - Starts the build for development.
+* `$ npm run build` - Builds the code for production.
+* `$ npm run format` - Formats files.
+* `$ npm run lint:css` - Lints CSS files.
+* `$ npm run lint:js` - Lints JavaScript files.
+* `$ npm run packages-update` - Updates WordPress packages to the latest version.
 
 ## Deployment
 

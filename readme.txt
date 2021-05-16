@@ -2,8 +2,8 @@
 Contributors: Ipstenu, liljimmi
 Tags: listicles, block
 Requires at least: 5.0
-Tested up to: 5.6
-Stable tag: 1.0.8
+Tested up to: 5.7
+Stable tag: 2.0
 Requires PHP: 7.0
 License: GPLv2 (or Later)
 
@@ -11,7 +11,7 @@ Create beautiful listicle blocks.
 
 == Description ==
 
-Be the next BuzzFeed! The listicles plugin creates interactive blocks for generating lists in articles. Unlike traditional lists (like `ul` and `li`) a listicle is intended to provide each section with a header, and multiple paragraphs per section.
+Be the next BuzzFeed! The listicles plugin creates interactive blocks for generating lists in articles. Unlike traditional lists that use `ul` and `li`, a listicle is intended to provide each section with a header and multiple paragraphs per section.
 
 With this plugin you can insert images, videos, and more inside each list item. The limit is your imagination.
 
@@ -49,12 +49,10 @@ You can edit it via custom CSS on your site.
 
 == Changelog ==
 
-= 1.0.8 =
-* Previous bug actually due to [https://github.com/Yoast/wordpress-seo/pull/15617](Yoast SEO) so adjusting for that.
-
-= 1.0.7 =
-* Deprecation compatibility fix.
-* Currently allowing ALL formats for RichText (in the title field) until [https://github.com/WordPress/gutenberg/issues/23660](#23660) is fixed.
+= 2.0 =
+* _No functionality changes_
+* 5.7 compatibility (deprecation fixes)
+* Ported from CGB to create-block due to the former being apparently abandoned, and the later being official.
 
 == Screenshots ==
 

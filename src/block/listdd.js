@@ -1,9 +1,10 @@
+import { registerBlockType } from '@wordpress/blocks';
+
 /**
  * WordPress dependencies
  */
 const { __ } = wp.i18n;
-const { InnerBlocks } = wp.editor;
-const { registerBlockType } = wp.blocks;
+const { InnerBlocks } = wp.blockEditor;
 const { Fragment } = wp.element;
 
 const ALLOWED_BLOCKS = [];

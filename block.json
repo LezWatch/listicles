@@ -1,4 +1,5 @@
 {
+	"apiVersion": 2,
 	"name": "lez-library/listicles",
 	"title": "Listicles",
 	"category": "layout",
@@ -15,7 +16,8 @@
 			"default": false
 		}
 	},
-	"script": "file:./dist/blocks.build.js",
-	"editorStyle": "file:./dist/blocks.editor.build.css",
-	"style": "file:./dist/blocks.style.build.css"
+	"textdomain": "listicles",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
 }

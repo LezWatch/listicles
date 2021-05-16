@@ -5,11 +5,9 @@
  * Description: Create listicle articles in posts.
  * Author: LezWatch.TV
  * Author URI: https://lezwatchtv.com
- * Version: 1.0.8
+ * Version: 2.0
  * License: GPL2+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
- *
- * @package CGB
  */
 
 // Exit if accessed directly.
@@ -17,34 +15,38 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-class Listicles_LWTV {
-
-	public function __construct() {
-		add_action( 'init', array( $this, 'check_requirements' ) );
-	}
-
-	/**
-	 * Test requirements
-	 * We need to meet them before we can run. If they kick back false, we deactivate.
-	 */
-	public function check_requirements() {
-		if ( ! function_exists( 'register_block_type' ) ) {
-			require_once ABSPATH . 'wp-admin/includes/plugin.php';
-			deactivate_plugins( __FILE__ );
-			wp_die(
-				__( 'Listicles requires WordPress 5.0 or higher, or for the Gutenberg plugin to be installed.', 'listicles' ),
-				'Plugin Activation Error',
-				array(
-					'response'  => 200,
-					'back_link' => true,
-				)
-			); // WPCS: xss ok.
-		}
-
-		// Else we can call the code.
-		require_once plugin_dir_path( __FILE__ ) . 'src/init.php';
-
-	}
+function listicles_block_assets() {
+	$build_css = '/build/style-index.css';
+	wp_enqueue_style(
+		'listicles',
+		plugins_url( $build_css, __FILE__ ),
+		array(),
+		filemtime( dirname( __FILE__ ) . $build_css )
+	);
 }
 
-new Listicles_LWTV();
+// Hook: Frontend assets.
+add_action( 'enqueue_block_assets', 'listicles_block_assets' );
+
+function listicles_editor_assets() {
+	$build_js = '/build/index.js';
+	wp_enqueue_script(
+		'listicles',
+		plugins_url( $build_js, __FILE__ ),
+		array( 'wp-blocks', 'wp-i18n', 'wp-element' ),
+		filemtime( dirname( __FILE__ ) . $build_js ),
+		true
+	);
+
+	// Styles.
+	$editor_css = '/build/index.css';
+	wp_enqueue_style(
+		'listicles-editor',
+		plugins_url( $editor_css, __FILE__ ),
+		array( 'wp-edit-blocks' ),
+		filemtime( dirname( __FILE__ ) . $editor_css )
+	);
+}
+
+// Hook: Editor assets.
+add_action( 'enqueue_block_editor_assets', 'listicles_editor_assets' );
