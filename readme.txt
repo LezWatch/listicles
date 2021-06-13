@@ -3,7 +3,7 @@ Contributors: Ipstenu, liljimmi
 Tags: listicles, block
 Requires at least: 5.0
 Tested up to: 5.7
-Stable tag: 2.0
+Stable tag: 2.0.1
 Requires PHP: 7.0
 License: GPLv2 (or Later)
 
@@ -38,6 +38,10 @@ Press the "Add Item" button at the bottom of your listicle.
 = How do I reverse the order? =
 
 Press the "Toggle Order" button at the bottom of the listicle, or when your whole listicle block is selected, turn on the 'Reversed' setting.
+
+= Why did the numbers get weird when I reversed? =
+
+Becuase CSS and PHP math is hard. Sadly the best way is to write the post with all the items and then, at the <strong>end</strong> reverse.
 
 = Can I move items within the listicle? =
 

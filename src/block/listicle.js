@@ -64,8 +64,8 @@ registerBlockType( 'lez-library/listicles', {
 		 */
 		const onAddItem = () => {
 			setAttributes( { items: parseInt(`${ items }`)+1 } )
-			const block = createBlock( 'lez-library/listitem' )
-			dispatch( 'core/block-editor' ).insertBlock( block, items, clientId )
+			const block = wp.blocks.createBlock( 'lez-library/listitem' )
+			wp.data.dispatch( 'core/block-editor' ).insertBlock( block, items, clientId )
 		}
 
 		return (
