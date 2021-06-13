@@ -53,6 +53,9 @@ You can edit it via custom CSS on your site.
 
 == Changelog ==
 
+= 2.1 =
+* Bugfix: Adding items broke thanks to a dependancy change.
+
 = 2.0 =
 * _No functionality changes_
 * 5.7 compatibility (deprecation fixes)
