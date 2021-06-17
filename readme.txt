@@ -3,7 +3,7 @@ Contributors: Ipstenu, liljimmi
 Tags: listicles, block
 Requires at least: 5.0
 Tested up to: 5.7
-Stable tag: 2.0.1
+Stable tag: 2.0.2
 Requires PHP: 7.0
 License: GPLv2 (or Later)
 
@@ -53,7 +53,7 @@ You can edit it via custom CSS on your site.
 
 == Changelog ==
 
-= 2.1 =
+= 2.0.2 =
 * Bugfix: Adding items broke thanks to a dependancy change.
 
 = 2.0 =
