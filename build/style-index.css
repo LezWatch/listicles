@@ -1,1 +1,41 @@
-hr.wp-block-separator{counter-reset:listicle-counter}.wp-block-lez-library-listicles{margin:4px;counter-reset:listicle-counter}.wp-block-lez-library-listicles dt:before{content:counter(listicle-counter);counter-increment:listicle-counter;margin-right:6px}.wp-block-lez-library-listicles.reversed dt:before{counter-increment:listicle-counter -1}.wp-block-lez-library-listicles .listicles-buttons button{float:left;margin:8px}.wp-block-lez-library-listicles .listicles-buttons{clear:both;content:"";display:table}.wp-block-lez-library-listicles .block-editor-block-list__insertion-point-inserter{display:none}
+/*!*********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/block/style.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************/
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+hr.wp-block-separator {
+  counter-reset: listicle-counter;
+}
+
+.wp-block-lez-library-listicles {
+  margin: 4px;
+  counter-reset: listicle-counter;
+}
+.wp-block-lez-library-listicles dt:before {
+  content: counter(listicle-counter);
+  counter-increment: listicle-counter;
+  margin-right: 6px;
+}
+.wp-block-lez-library-listicles.reversed dt:before {
+  counter-increment: listicle-counter -1;
+}
+
+.wp-block-lez-library-listicles .listicles-buttons button {
+  float: left;
+  margin: 8px;
+}
+
+.wp-block-lez-library-listicles .listicles-buttons {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.wp-block-lez-library-listicles .block-editor-block-list__insertion-point-inserter {
+  display: none;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
