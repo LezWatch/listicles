@@ -52,13 +52,13 @@ This plugin exists on WordPress.org so you can install it by searching for Listi
 
 ### Example Images
 
-![Add To Post](assets/screenshot-01.jpg?raw=true "Add to post")
+![Add To Post](plugin-assets/screenshot-01.jpg?raw=true "Add to post")
 
-![A Brand New Listicle](assets/screenshot-02.jpg?raw=true "Example of a new listicle")
+![A Brand New Listicle](plugin-assets/screenshot-02.jpg?raw=true "Example of a new listicle")
 
-![A Listicle with Content](assets/screenshot-03.jpg?raw=true "A Listicle with Content")
+![A Listicle with Content](plugin-assets/screenshot-03.jpg?raw=true "A Listicle with Content")
 
-![A Listicle Reversed](assets/screenshot-04.jpg?raw=true "A Listicle Reversed")
+![A Listicle Reversed](plugin-assets/screenshot-04.jpg?raw=true "A Listicle Reversed")
 
 ## License
 
