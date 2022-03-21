@@ -9,9 +9,8 @@
  * Webpack is compiling as the input file.
  */
 
-import './block/listicle.js'; // Main Listicle (the dl)
-import './block/listitem.js'; // List Items (includes dt and dd)
-import './block/rankeditem.js'; // List Items (includes dt and dd)
-import './block/listdt.js'; // The title of the item
-import './block/listdd.js'; // Free text!
-import './block/rating.js';
+import './block/listicle.js';    // Main Listicle (the dl)
+import './block/listitem.js';    // List Items (includes dt and dd)
+import './block/rankeditem.js';  // List Items (includes dt and dd)
+import './block/listdt.js';      // The title of the item
+import './block/listdd.js';      // Free text!

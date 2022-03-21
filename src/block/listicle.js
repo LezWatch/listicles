@@ -47,8 +47,8 @@ const getItemsTemplate = memoize((items) => {
 import './style.scss';
 import './editor.scss';
 
-registerBlockType('lez-library/listicles', {
-	title: __('Listicle', 'listicles'),
+registerBlockType( 'lez-library/listicles', {
+	title: __( 'Listicle', 'listicles' ),
 	icon: 'excerpt-view',
 	category: 'layout',
 	attributes: {
@@ -146,8 +146,8 @@ registerBlockType('lez-library/listicles', {
 				>
 					<InnerBlocks
 						template={getItemsTemplate(items)}
-						allowedBlocks={[['lez-library/listitem']]}
-						defaultBlock={'lez-library/listitem'}
+						allowedBlocks={ [ ['lez-library/listitem'] ] }
+						defaultBlock={ 'lez-library/listitem' }
 						renderAppender={false}
 					/>
 					<div className="listicles-buttons">

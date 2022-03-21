@@ -10,13 +10,13 @@ const { InnerBlocks } = wp.blockEditor;
 const { Fragment } = wp.element;
 const { select } = wp.data;
 
-registerBlockType('lez-library/listitem', {
-	title: __('List Item', 'listicles'),
+registerBlockType( 'lez-library/listitem', {
+	title: __( 'List Item', 'listicles' ),
 	parent: ['lez-library/listicles'],
 	icon: 'editor-rtl',
 	category: 'layout',
 
-	description: __('An individual list item.', 'listicles'),
+	description: __( 'An individual list item.', 'listicles' ),
 
 	edit: function (props) {
 		const { className, clientId } = props;

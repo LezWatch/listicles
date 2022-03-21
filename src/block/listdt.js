@@ -8,7 +8,7 @@ const { InnerBlocks, RichText } = wp.blockEditor;
 const { Fragment } = wp.element;
 
 registerBlockType('lez-library/listdt', {
-	title: __('Listicle Item Title', 'listicles'),
+	title: __( 'Listicle Item Title', 'listicles' ),
 	parent: ['lez-library/listitem'],
 	icon: 'migrate',
 	category: 'layout',
@@ -17,14 +17,14 @@ registerBlockType('lez-library/listdt', {
 			type: 'array',
 			source: 'children',
 			selector: 'dt',
-			default: __('Title', 'listicles'),
+			default: __( 'Title', 'listicles' ),
 		},
 		placeholder: {
 			type: 'string',
-			default: __('Title', 'listicles'),
+			default: __( 'Title', 'listicles' ),
 		},
 	},
-	description: __('An individual list item title.', 'listicles'),
+	description: __( 'An individual list item title.', 'listicles' ),
 
 	edit({ attributes, setAttributes, isSelected, className }) {
 		const { content } = attributes;
