@@ -12,13 +12,13 @@ const { select } = wp.data;
 
 registerBlockType( 'lez-library/listitem', {
 	title: __( 'List Item', 'listicles' ),
-	parent: ['lez-library/listicles'],
+	parent: [ 'lez-library/listicles' ],
 	icon: 'editor-rtl',
 	category: 'layout',
 
 	description: __( 'An individual list item.', 'listicles' ),
 
-	edit: function (props) {
+	edit: function( props ) {
 		const { className, clientId } = props;
 
 		useEffect(() => {
@@ -50,9 +50,9 @@ registerBlockType( 'lez-library/listitem', {
 	},
 
 	save: function (props) {
-		const {
-			attributes: { className },
-		} = props;
-		return <InnerBlocks.Content />;
+		const { attributes: { className } } = props;
+		return (
+			<InnerBlocks.Content />
+		);
 	},
-});
+} );

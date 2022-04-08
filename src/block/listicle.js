@@ -98,16 +98,13 @@ registerBlockType( 'lez-library/listicles', {
 		return (
 			<Fragment>
 				<InspectorControls>
-					<PanelBody title={__('Listicle Settings', 'listicles')}>
+					<PanelBody title={ __( 'Listicle Settings', 'listicles' ) }>
 						<ToggleControl
 							label={'Reversed'}
-							help={(checked) =>
+							help={ (checked) =>
 								checked
-									? __('Reversed order (10 - 1)', 'listicles')
-									: __(
-											'Numerical order (1 - 10)',
-											'listicles'
-									  )
+									? __( 'Reversed order (10 - 1)', 'listicles' )
+									: __( 'Numerical order (1 - 10)', 'listicles' )
 							}
 							checked={props.attributes.reversed}
 							onChange={() =>
@@ -126,7 +123,6 @@ registerBlockType( 'lez-library/listicles', {
 						template={getItemsTemplate(items)}
 						allowedBlocks={ [ ['lez-library/listitem'] ] }
 						defaultBlock={ 'lez-library/listitem' }
-						renderAppender={false}
 					/>
 					<div className="listicles-buttons">
 						<Button
@@ -152,25 +148,23 @@ registerBlockType( 'lez-library/listicles', {
 	},
 
 	save: (props) => {
-		const {
-			attributes: { className },
-		} = props;
+		const { attributes: { className } } = props;
 		let { items, reversed } = props.attributes;
 
 		let reversai = '';
 		let counter = 0;
-		if (reversed) {
+		if ( reversed ) {
 			reversai = 'reversed';
-			counter = parseInt(`${items}`) + 1;
+			counter = parseInt(`${ items }`) + 1;
 		}
 
 		return (
 			<dl
-				className={`${className} ${reversai} listicle items-${items}`}
-				style={{ counterReset: `listicle-counter ${counter}` }}
+				className={ `${ className } ${ reversai } listicle items-${ items }` }
+				style={ { counterReset: `listicle-counter ${ counter }` } }
 			>
 				<InnerBlocks.Content />
 			</dl>
 		);
 	},
-});
+} );

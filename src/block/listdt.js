@@ -7,9 +7,9 @@ const { __ } = wp.i18n;
 const { InnerBlocks, RichText } = wp.blockEditor;
 const { Fragment } = wp.element;
 
-registerBlockType('lez-library/listdt', {
+registerBlockType( 'lez-library/listdt', {
 	title: __( 'Listicle Item Title', 'listicles' ),
-	parent: ['lez-library/listitem'],
+	parent: [ 'lez-library/listitem' ],
 	icon: 'migrate',
 	category: 'layout',
 	attributes: {
@@ -26,10 +26,10 @@ registerBlockType('lez-library/listdt', {
 	},
 	description: __( 'An individual list item title.', 'listicles' ),
 
-	edit({ attributes, setAttributes, isSelected, className }) {
+	edit( { attributes, setAttributes, isSelected, className } ) {
 		const { content } = attributes;
 
-		return (
+		return(
 			<Fragment>
 				<RichText
 					tagName="dt"
@@ -43,20 +43,20 @@ registerBlockType('lez-library/listdt', {
 						'core/text-color',
 						'yoast-seo/link',
 					]}
-					onChange={(content) => setAttributes({ content })}
+					onChange={ ( content ) => setAttributes( { content } ) }
 				/>
 			</Fragment>
 		);
 	},
 
-	save({ attributes, className }) {
+	save( { attributes, className } ) {
 		const { content } = attributes;
 
 		return (
 			<RichText.Content
-				tagName="dt"
-				className={className}
-				value={content}
+				tagName='dt'
+				className={ className }
+				value={ content }
 			/>
 		);
 	},
