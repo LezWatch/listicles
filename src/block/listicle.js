@@ -59,11 +59,7 @@ registerBlockType( 'lez-library/listicles', {
 		reversed: {
 			type: 'boolean',
 			default: false,
-		},
-		ranked: {
-			type: 'boolean',
-			default: false,
-		},
+		}
 	},
 	description: __(
 		'A block for listicles. You can add items, remove them, and flip them in reverse.',
@@ -77,15 +73,13 @@ registerBlockType( 'lez-library/listicles', {
 			setAttributes,
 			clientId,
 		} = props;
-		let { items, reversed, ranked } = props.attributes;
+		let { items, reversed } = props.attributes;
 
 		useEffect(() => updateListicleCount(clientId), [clientId]);
 
 		let reversai = '';
 		let counter = '0';
-		let itemBlock = ranked
-			? 'lez-library/rankeditem'
-			: 'lez-library/listitem';
+		let itemBlock = 'lez-library/listitem';
 		if (reversed) {
 			reversai = 'reversed';
 			counter = parseInt(`${items}`) + 1;
@@ -106,20 +100,6 @@ registerBlockType( 'lez-library/listicles', {
 				<InspectorControls>
 					<PanelBody title={__('Listicle Settings', 'listicles')}>
 						<ToggleControl
-							label={'Ranked'}
-							help={(checked) =>
-								checked
-									? __('Listicle is ranked.', 'listicles')
-									: __('Listicle is default.', 'listicles')
-							}
-							checked={props.attributes.ranked}
-							onChange={() =>
-								props.setAttributes({
-									ranked: !props.attributes.ranked,
-								})
-							}
-						/>
-						<ToggleControl
 							label={'Reversed'}
 							help={(checked) =>
 								checked
@@ -139,9 +119,7 @@ registerBlockType( 'lez-library/listicles', {
 					</PanelBody>
 				</InspectorControls>
 				<dl
-					className={`${className} ${reversai} listicle items-${items} ${
-						ranked ? 'ranked' : ''
-					}`}
+					className={`${className} ${reversai} listicle items-${items}`}
 					style={{ counterReset: `listicle-counter ${counter}` }}
 				>
 					<InnerBlocks
