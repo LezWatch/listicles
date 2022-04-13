@@ -2,7 +2,7 @@
 Contributors: Ipstenu, liljimmi
 Tags: listicles, block
 Requires at least: 5.0
-Tested up to: 5.9
+Tested up to: 6.0
 Stable tag: 2.1.0
 Requires PHP: 7.0
 License: GPLv2 (or Later)

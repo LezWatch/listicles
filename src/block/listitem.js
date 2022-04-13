@@ -19,37 +19,37 @@ registerBlockType( 'lez-library/listitem', {
 	description: __( 'An individual list item.', 'listicles' ),
 
 	edit: function( props ) {
-		const { className, clientId } = props;
+		const { clientId } = props;
 
 		useEffect(() => {
-			const parentClientId =
-				select('core/block-editor').getBlockParents(clientId);
+			const parentClientId = select( 'core/block-editor' ).getBlockHierarchyRootClientId( clientId );
 
-			updateListicleCount(parentClientId);
+			updateListicleCount( parentClientId );
+			
 
-			return () => updateListicleCount(parentClientId);
+			return () => updateListicleCount( parentClientId );
 		}, [clientId]);
 
 		return (
 			<Fragment>
-				<div className="listicles-innerblocks">
-					<InnerBlocks
-						template={[
-							['lez-library/listdt'],
-							['lez-library/listdd'],
-						]}
-						allowedBlocks={[
-							['lez-library/listdt'],
-							['lez-library/listdd'],
-						]}
-						templateLock={'all'}
+				<div className='listicles-innerblocks' >
+ 					<InnerBlocks
+ 					template={ [
+ 						[ 'lez-library/listdt' ],
+ 						[ 'lez-library/listdd' ],
+ 					] }
+ 					allowedBlocks={ [
+ 						[ 'lez-library/listdt' ],
+						[ 'lez-library/listdd' ]
+ 					] }
+ 					templateLock={ 'all' }
 					/>
 				</div>
 			</Fragment>
 		);
 	},
 
-	save: function (props) {
+	save: function( props ) {
 		const { attributes: { className } } = props;
 		return (
 			<InnerBlocks.Content />
