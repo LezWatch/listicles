@@ -1,21 +1,20 @@
 import { registerBlockType } from '@wordpress/blocks';
 import { useEffect } from 'react';
-import { updateListicleCount } from './listicle';
+import { updateListicleCount } from './components/update-count';
 
 /**
  * WordPress dependencies
  */
-const { __ } = wp.i18n;
-const { InnerBlocks } = wp.blockEditor;
-const { Fragment } = wp.element;
-const { select } = wp.data;
+import { __, _n } from '@wordpress/i18n';
+import { InnerBlocks } from '@wordpress/block-editor';
+import { Fragment } from '@wordpress/element';
+import { select } from '@wordpress/data';
 
 registerBlockType( 'lez-library/listitem', {
 	title: __( 'List Item', 'listicles' ),
 	parent: [ 'lez-library/listicles' ],
 	icon: 'editor-rtl',
 	category: 'layout',
-
 	description: __( 'An individual list item.', 'listicles' ),
 
 	edit: function( props ) {
@@ -23,10 +22,7 @@ registerBlockType( 'lez-library/listitem', {
 
 		useEffect(() => {
 			const parentClientId = select( 'core/block-editor' ).getBlockHierarchyRootClientId( clientId );
-
 			updateListicleCount( parentClientId );
-			
-
 			return () => updateListicleCount( parentClientId );
 		}, [clientId]);
 
@@ -49,8 +45,7 @@ registerBlockType( 'lez-library/listitem', {
 		);
 	},
 
-	save: function( props ) {
-		const { attributes: { className } } = props;
+	save: function() {
 		return (
 			<InnerBlocks.Content />
 		);

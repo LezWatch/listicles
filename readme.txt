@@ -1,9 +1,9 @@
 = Listicles by LezWatch.TV =
 Contributors: Ipstenu, liljimmi
 Tags: listicles, block
-Requires at least: 5.0
-Tested up to: 6.1
-Stable tag: 2.1.0
+Requires at least: 6.0
+Tested up to: 6.2
+Stable tag: 2.2.0
 Requires PHP: 7.0
 License: GPLv2 (or Later)
 
@@ -48,6 +48,11 @@ Yes! The same way you move any blocks.
 You can edit it via custom CSS on your site.
 
 == Changelog ==
+
+= 2.2.0 =
+* WordPress 6.3 compatibility
+* Bugfix: Correct error where you cannot delete block.
+* Moderization of calls (import vs const etc)
 
 = 2.1.0 =
 * Listicle ordering no longer looks weird when reversing - @props jpowersdev

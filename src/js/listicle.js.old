@@ -4,17 +4,16 @@ import { useEffect } from 'react';
 /**
  * External dependencies
  */
-import classnames from 'classnames';
 import memoize from 'memize';
 import times from 'lodash/times';
 
 /**
  * WordPress dependencies
  */
-const { __ } = wp.i18n;
+import { __ } from '@wordpress/i18n';
 const { Fragment } = wp.element;
-const { createBlock, InnerBlocks, InspectorControls } = wp.blockEditor;
-const { PanelBody, ToggleControl, RangeControl, Button } = wp.components;
+const { InnerBlocks, InspectorControls } = wp.blockEditor;
+const { PanelBody, ToggleControl, Button } = wp.components;
 const { select, dispatch } = wp.data;
 
 /**
@@ -61,10 +60,7 @@ registerBlockType( 'lez-library/listicles', {
 			default: false,
 		}
 	},
-	description: __(
-		'A block for listicles. You can add items, remove them, and flip them in reverse.',
-		'listicles'
-	),
+	description: __( 'A block for listicles. You can add items, remove them, and flip them in reverse.', 'listicles' ),
 
 	edit: (props) => {
 		const {

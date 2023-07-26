@@ -3,11 +3,9 @@ import { registerBlockType } from '@wordpress/blocks';
 /**
  * WordPress dependencies
  */
-const { __ } = wp.i18n;
-const { InnerBlocks } = wp.blockEditor;
-const { Fragment } = wp.element;
-
-const ALLOWED_BLOCKS = [];
+import { __ } from '@wordpress/i18n';
+import { InnerBlocks } from '@wordpress/block-editor';
+import { Fragment } from '@wordpress/element';
 
 registerBlockType( 'lez-library/listdd', {
 	title: __( 'List Item Content', 'listicles' ),
@@ -29,7 +27,6 @@ registerBlockType( 'lez-library/listdd', {
 								{ placeholder: 'List Content...' },
 							],
 						]}
-						//allowedBlocks={ ALLOWED_BLOCKS }
 						templateLock={false} // This doesn't work as described.
 					/>
 				</dd>

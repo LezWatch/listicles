@@ -17,7 +17,7 @@
 		}
 	},
 	"textdomain": "listicles",
-	"editorScript": "file:./build/index.js",
+	"editorScript": "file:./src/index.js",
 	"editorStyle": "file:./build/index.css",
 	"style": "file:./build/style-index.css"
 }
