@@ -5,7 +5,7 @@ import { registerBlockType } from '@wordpress/blocks';
  */
 import { __ } from '@wordpress/i18n';
 import { RichText } from '@wordpress/block-editor';
-import { createElement, Fragment } from '@wordpress/element';
+import { Fragment } from '@wordpress/element';
 
 registerBlockType( 'lez-library/listdt', {
 	title: __( 'Listicle Item Title', 'listicles' ),
@@ -19,47 +19,45 @@ registerBlockType( 'lez-library/listdt', {
 			selector: 'dt',
 			default: __( 'Title', 'listicles' ),
 		},
+		placeholder: {
+			type: 'string',
+			default: __( 'Title', 'listicles' ),
+		},
 	},
 	description: __( 'An individual list item title.', 'listicles' ),
 
-	edit: function (props) {
-		const { attributes: className, focus, setFocus } = props;
-		const { content } = props.attributes;
+	edit( { attributes, setAttributes, className } ) {
+		const { content } = attributes;
 
-		function onChangeTitle( newContent ) {
-			props.setAttributes( { content: newContent } );
-		}
-
-		const editTitle = createElement(
-			RichText,
-			{
-				tagName: 'dt',
-				className: className,
-				onChange: onChangeTitle,
-				value: content,
-				focus: focus,
-				onFocus: setFocus,
-			}
-		);
-
-		return (
+		return(
 			<Fragment>
-				<dt className={className}>
-					{ editTitle }
-				</dt>
+				<RichText
+					tagName="dt"
+					className={className}
+					value={ content }
+					allowedFormats={[
+						'core/bold',
+						'core/link',
+						'core/italic',
+						'core/strikethrough',
+						'core/text-color',
+						'yoast-seo/link',
+					]}
+					onChange={ ( content ) => setAttributes( { content } ) }
+				/>
 			</Fragment>
 		);
 	},
 
-	save: function (props) {
-		const { attributes: { className } } = props;
-		const { content } = props.attributes;
+	save( { attributes, className } ) {
+		const { content } = attributes;
+
 		return (
-			<Fragment>
-			<dt className={className}>
-				{ content }
-			</dt>
-			</Fragment>
+			<RichText.Content
+				tagName='dt'
+				className={ className }
+				value={ content }
+			/>
 		);
 	},
 });
