@@ -24,18 +24,20 @@ To use this project you will need Node.js and npm installed. If you don't alread
 
 1. `git clone https://github.com/Ipstenu/listicles-gutenberg.git plugin-name`
 2. `npm install`
+3. `npm run build`
 
-This will install everything you need to build
+That will install and build the JS and CSS needed to run the plugin.
 
 ### Extending
 
 The source code is located in `/src/` - that's where most (if not all) of your work will happen.
 
-* `index.js` - A list of all the separate JS files included
-* `/block/listicle.js` - The main listicle file
-* `/block/listitem.js` - Individual list items (this is only usable inside the Listicles block)
-* `/block/listdt.js` - The list title
-* `/block/listdd.js` - The list content (this allows you to add as many sub blocks as you can)
+* `index.js` - The main listicle file
+* `/js/listitem.js` - Individual list items (this is only usable inside the Listicles block)
+* `/js/listdt.js` - The list title
+* `/js/listdd.js` - The list content (this allows you to add as many sub blocks as you can)
+
+The basic CSS can be found in `/src/css/`.
 
 Once you've made your changes you'll rebuild the plugin using the following commands:
 
@@ -45,6 +47,8 @@ Once you've made your changes you'll rebuild the plugin using the following comm
 * `$ npm run lint:css` - Lints CSS files.
 * `$ npm run lint:js` - Lints JavaScript files.
 * `$ npm run packages-update` - Updates WordPress packages to the latest version.
+
+You may need to run `npm update` in order to update the libraries before you update the packages.
 
 ## Deployment
 

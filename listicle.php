@@ -5,7 +5,7 @@
  * Description: Create listicle articles in posts.
  * Author: LezWatch.TV
  * Author URI: https://lezwatchtv.com
- * Version: 2.1.0
+ * Version: 2.2.0
  * License: GPL2+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
