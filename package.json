@@ -1,6 +1,6 @@
 {
 	"name": "listicles",
-	"version": "2.0.2",
+	"version": "3.0.0",
 	"description": "Insert Listicles into posts!",
 	"author": "LezWatch.TV",
 	"license": "GPL-2.0-or-later",
@@ -14,10 +14,10 @@
 		"packages-update": "wp-scripts packages-update"
 	},
 	"dependencies": {
-		"@wordpress/blocks": "^12.15.0",
-		"@wordpress/i18n": "^4.38.0"
+		"@wordpress/blocks": "^15.22.0",
+		"@wordpress/i18n": "^6.22.0"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^26.9.0"
+		"@wordpress/scripts": "^32.5.0"
 	}
 }
