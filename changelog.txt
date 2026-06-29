@@ -1,3 +1,6 @@
+= 3.0.0 =
+* Compatibility with WP 7.0
+
 = 1.0.8 =
 * Previous bug actually due to [https://github.com/Yoast/wordpress-seo/pull/15617](Yoast SEO) so adjusting for that.
 
