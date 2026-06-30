@@ -1,3 +1,5 @@
+import metadata from '../block.json';
+
 import { registerBlockType } from '@wordpress/blocks';
 import { useEffect } from 'react';
 
@@ -33,22 +35,7 @@ import './js/listdd.js';      // Free text!
 
 import { updateListicleCount } from './js/components/update-count';
 
-registerBlockType( 'lez-library/listicles', {
-	title: __( 'Listicle', 'listicles' ),
-	icon: 'excerpt-view',
-	category: 'layout',
-	attributes: {
-		items: {
-			type: 'number',
-			default: 2,
-		},
-		reversed: {
-			type: 'boolean',
-			default: false,
-		}
-	},
-	description: __( 'A block for listicles. You can add items, remove them, and flip them in reverse.', 'listicles' ),
-
+registerBlockType( metadata.name, {
 	edit: (props) => {
 		const { attributes: { className }, setAttributes, clientId } = props;
 		let { items, reversed } = props.attributes;

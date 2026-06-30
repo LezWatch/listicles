@@ -1,10 +1,12 @@
 {
-	"apiVersion": 2,
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 3,
+	"version": "3.0",
 	"name": "lez-library/listicles",
 	"title": "Listicles",
 	"category": "layout",
 	"icon": "excerpt-view",
-	"description": "A block to generate Listicles.",
+	"description": "A block for listicles. You can add items, remove them, and flip them in reverse.",
 	"keywords": [ "list", "listicle", "listicles" ],
 	"attributes": {
 		"items": {
