@@ -3,7 +3,7 @@ Contributors: Ipstenu, liljimmi
 Tags: listicles, block
 Requires at least: 6.0
 Tested up to: 7.1
-Stable tag: 3.0.0
+Stable tag: 3.0.1
 Requires PHP: 7.0
 License: GPLv2 (or Later)
 
@@ -49,11 +49,14 @@ You can edit it via custom CSS on your site.
 
 == Changelog ==
 
-= 3.0.0 =
+= 3.0.1 =
 * Compatibility with WP 7.1
 * Compatibility with APIv3
 * Improvement: All blocks (parent and children) have their own proper metadata registration
 * Bugfix: Item count works properly
+
+= 3.0.0 (never released) =
+* Compatibility with WP 7.0
 
 == Screenshots ==
 
