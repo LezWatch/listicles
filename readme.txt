@@ -1,7 +1,7 @@
 = Listicles by LezWatch.TV =
 Contributors: Ipstenu, liljimmi
 Tags: listicles, block
-Requires at least: 6.0
+Requires at least: 6.3
 Tested up to: 7.1
 Stable tag: 3.0.1
 Requires PHP: 7.0
