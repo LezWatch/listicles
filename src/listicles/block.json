@@ -4,10 +4,11 @@
 	"version": "3.0",
 	"name": "lez-library/listicles",
 	"title": "Listicles",
-	"category": "layout",
+	"category": "lezwatch",
 	"icon": "excerpt-view",
 	"description": "A block for listicles. You can add items, remove them, and flip them in reverse.",
 	"keywords": [ "list", "listicle", "listicles" ],
+	"textdomain": "listicles",
 	"attributes": {
 		"items": {
 			"type": "number",
@@ -18,8 +19,7 @@
 			"default": false
 		}
 	},
-	"textdomain": "listicles",
-	"editorScript": "file:./src/index.js",
-	"editorStyle": "file:./build/index.css",
-	"style": "file:./build/style-index.css"
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
 }

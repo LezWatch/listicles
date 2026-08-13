@@ -1,0 +1,13 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 3,
+	"version": "3.0",
+	"name": "lez-library/listdd",
+	"title": "List Item Content",
+	"category": "lezwatch",
+	"icon": "migrate",
+	"description": "A list item description (aka content).",
+	"textdomain": "listicles",
+	"parent": [ "lez-library/listitem" ],
+	"editorScript": "file:./index.js"
+}

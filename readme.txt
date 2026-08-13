@@ -2,7 +2,7 @@
 Contributors: Ipstenu, liljimmi
 Tags: listicles, block
 Requires at least: 6.0
-Tested up to: 7.0
+Tested up to: 7.1
 Stable tag: 3.0.0
 Requires PHP: 7.0
 License: GPLv2 (or Later)
@@ -49,21 +49,11 @@ You can edit it via custom CSS on your site.
 
 == Changelog ==
 
-= 2.2.0 =
-* WordPress 6.3 compatibility
-* Bugfix: Correct error where you cannot delete block.
-* Moderization of calls (import vs const etc)
-
-= 2.1.0 =
-* Listicle ordering no longer looks weird when reversing - @props jpowersdev
-
-= 2.0.2 =
-* Bugfix: Adding items broke thanks to a dependency change.
-
-= 2.0 =
-* _No functionality changes_
-* 5.7 compatibility (deprecation fixes)
-* Ported from CGB to create-block due to the former being apparently abandoned, and the later being official.
+= 3.0.0 =
+* Compatibility with WP 7.1
+* Compatibility with APIv3
+* Improvement: All blocks (parent and children) have their own proper metadata registration
+* Bugfix: Item count works properly
 
 == Screenshots ==
 

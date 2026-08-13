@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 3,
+  "version": "3.0",
+  "name": "lez-library/listitem",
+  "title": "List Item",
+  "category": "lezwatch",
+  "icon": "editor-rtl",
+  "description": "An individual list item.",
+  "textdomain": "listicles",
+  "parent": [
+    "lez-library/listicles"
+  ],
+  "editorScript": "file:./index.js"
+}

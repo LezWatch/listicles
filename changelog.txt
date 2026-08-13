@@ -1,5 +1,18 @@
-= 3.0.0 =
-* Compatibility with WP 7.0
+= 2.2.0 =
+* WordPress 6.3 compatibility
+* Bugfix: Correct error where you cannot delete block.
+* Moderization of calls (import vs const etc)
+
+= 2.1.0 =
+* Listicle ordering no longer looks weird when reversing - @props jpowersdev
+
+= 2.0.2 =
+* Bugfix: Adding items broke thanks to a dependency change.
+
+= 2.0 =
+* _No functionality changes_
+* 5.7 compatibility (deprecation fixes)
+* Ported from CGB to create-block due to the former being apparently abandoned, and the later being official.
 
 = 1.0.8 =
 * Previous bug actually due to [https://github.com/Yoast/wordpress-seo/pull/15617](Yoast SEO) so adjusting for that.

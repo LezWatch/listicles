@@ -15,38 +15,47 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-function listicles_block_assets() {
-	$build_css = '/build/style-index.css';
-	wp_enqueue_style(
-		'listicles',
-		plugins_url( $build_css, __FILE__ ),
-		array(),
-		filemtime( dirname( __FILE__ ) . $build_css )
-	);
+/**
+ * Register the blocks from their build-time metadata.
+ *
+ * Each block ships a block.json, which is what tells WordPress the title,
+ * category, attributes and apiVersion, and which enqueues the editor script
+ * and styles. Registering server side is also what gets the editor styles
+ * into the iframed (apiVersion 3) editor.
+ */
+function listicles_register_blocks() {
+	$blocks = array( 'listicles', 'listitem', 'listdt', 'listdd' );
+
+	foreach ( $blocks as $block ) {
+		register_block_type( __DIR__ . '/build/' . $block );
+	}
 }
 
-// Hook: Frontend assets.
-add_action( 'enqueue_block_assets', 'listicles_block_assets' );
+add_action( 'init', 'listicles_register_blocks' );
 
-function listicles_editor_assets() {
-	$build_js = '/build/index.js';
-	wp_enqueue_script(
-		'listicles',
-		plugins_url( $build_js, __FILE__ ),
-		array( 'wp-blocks', 'wp-i18n', 'wp-element' ),
-		filemtime( dirname( __FILE__ ) . $build_js ),
-		true
+/**
+ * Make sure the LezWatch.TV block category exists.
+ *
+ * The main LezWatch.TV plugin normally registers this, but Listicles can run
+ * standalone, and a block pointing at a category nobody registered gets its
+ * category silently stripped by the editor.
+ *
+ * @param array $categories Registered block categories.
+ */
+function listicles_block_category( $categories ) {
+	foreach ( $categories as $category ) {
+		if ( 'lezwatch' === $category['slug'] ) {
+			return $categories;
+		}
+	}
+
+	$categories[] = array(
+		'slug'  => 'lezwatch',
+		'title' => __( 'LezWatch.TV Blocks', 'listicles' ),
+		'icon'  => 'smiley',
 	);
 
-	// Styles.
-	$editor_css = '/build/index.css';
-	wp_enqueue_style(
-		'listicles-editor',
-		plugins_url( $editor_css, __FILE__ ),
-		array( 'wp-edit-blocks' ),
-		filemtime( dirname( __FILE__ ) . $editor_css )
-	);
+	return $categories;
 }
 
-// Hook: Editor assets.
-add_action( 'enqueue_block_editor_assets', 'listicles_editor_assets' );
+add_filter( 'block_categories_all', 'listicles_block_category' );
